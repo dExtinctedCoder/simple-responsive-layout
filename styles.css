@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100&family=Lexend+Deca:wght@200&family=Poppins:wght@100;200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #fff;
+  text-align: center;
+  line-height: 1.7;
+  font-family: 'Poppins', sans-serif;
+}
+.page-box {
+  position: relative;
+  height: 100vw;
+}
+.content {
+  background-image: url(images/bg-intro-mobile.png);
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+}
+.content-control {
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* site info */
+.card-info {
+  margin-bottom: 20px;
+}
+.card-info>span {
+  display: inline-block;
+  background-color: rgb(93,84,163);
+  padding: 20px 40px;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 7px 0 0 rgb(217,101,102);
+}
+.site-info {
+  margin-bottom: 90px;
+  padding: 20px 50px;
+}
+.site-info>h2 {
+  font-weight: 900;
+  margin: 20px auto;
+  font-size: 35px;
+  text-align: left;
+}
+.site-info>p {
+  font-weight: 500;
+  text-align: left;
+}
+
+
+/* register card */
+form {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  color: #333;
+  box-shadow: 0 7px 0 0 rgb(221,103,103);
+}
+table {
+  width: 100%;
+  margin: auto;
+  border-spacing: 0px;
+}
+input {
+  width: 100%;
+  height: 50px;
+  background-color: inherit;
+ /*
+  margin-bottom: 30px; */
+  border-radius: 7.5px;
+  border: 0.1px solid #eee;
+  padding: 20px;
+  font-weight: 700;
+  position: relative;
+  color: rgba(50.2%, 50.2%, 50.2%);
+  position: relative;
+}
+input[type="submit"] {
+  background-color: #37cc8a;
+  color: white;
+  margin-bottom: 0;
+  border: none;
+  box-shadow: 0 4px 0 0 rgb(48,186,127);
+}
+input:focus {
+    /* name cannot be empty */
+
+  outline: none;
+}
+
+td {
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  margin-bottom: 15px;
+}
+input:focus:invalid {
+  border: 1px solid hsl(0, 100%, 74%);
+  background-image: url(images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-origin: content-box
+}
+input:focus:invalid+.span {
+  color: hsl(0, 100%, 74%);
+  font-size: 14px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 0px 5px 5px;
+} 
+
+
+.span {
+  display: none;
+} 
+
+
+table .span>b {
+  color: hsl(0, 100%, 74%);
+}
+
+input:focus:valid {
+  border: 1px solid #009000;
+}
+
+form span {
+  display: inline-block;
+  margin-top: 10px;
+  padding: auto 30px;
+}
+span>a{
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255,121,120);
+}
+.site-card {
+  margin: 40px auto;
+}
+
+@media screen and (min-width: 1025px) {
+  .page-box {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  .content {
+    padding: 50px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/bg-intro-desktop.png);
+ 
+  }
+  .content-control {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .site-info {
+    margin-bottom: 0;
+  }
+  .site-info {
+    width: 50%;
+    padding: 10px;
+  }
+  .site-card {
+    width: 50%;
+  }
+  .site-info>h2 {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+  .site-info>p {
+    font-weight: 500;
+  }
+  .card-info {
+    margin-bottom: 30px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .page-box {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  .content {
+    background-image: url(/images/bg-intro-desktop.png);
+    padding: 5px;
+    width: 100vw;
+    height: 100vh;
+  }
+  .content-control {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+  .site-info {
+    margin-bottom: 0;
+    width: 50%;
+  }
+  .site-info>h2 {
+    margin: 10px auto;
+    font-size: 40px;
+  }
+  .site-info {
+    padding: 20px 30px;
+  }
+  .site-info>p {
+    font-weight: 400;
+  }
+  .site-card {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .page-box {
+    position: relative;
+    height: 100vw;
+  }
+  .content {
+    padding: 50px 15px;
+    width: 100vw;
+  }
+  .content-control {
+    flex-direction: column;
+    align-items: center;
+  }
+  .site-card {
+    width: 100%;
+  }
+  .site-info>h2 {
+    margin: 10px auto;
+    font-size: 38px;
+  }
+}
