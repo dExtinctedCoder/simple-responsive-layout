@@ -168,7 +168,7 @@ span>a{
     padding: 50px;
     width: 100vw;
     height: 100vh;
-    background-image: url(/images/bg-intro-desktop.png);
+    background-image: url(images/bg-intro-desktop.png);
  
   }
   .content-control {
@@ -206,7 +206,7 @@ span>a{
     height: 100vh;
   }
   .content {
-    background-image: url(/images/bg-intro-desktop.png);
+    background-image: url(images/bg-intro-desktop.png);
     padding: 5px;
     width: 100vw;
     height: 100vh;
